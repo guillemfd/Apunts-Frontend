@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // ARRAY TYPE
+        const students = []
+        console.log(`El tipo de un array es ${typeof students}, podemos saber si es un array así: ${Array.isArray(students)}`)
+
+
+
+
+        // ARRAY DECLARATION
+        const drinks = ['Coca-cola', 'Agua', 'Monster', 'Kas', 'Cacaolat']
+
+
+
+        // GETTER ACCESS
+        const firstDrink = drinks[0]
+        const thirdDrink = drinks[2]
+
+        console.log('La primera y tercera bebida son', firstDrink, thirdDrink)
+
+
+
+        // SETTER ACCESS
+        drinks[2] = 'Red Bull'
+        drinks[5] = 'Pepsi'
+
+        console.log('Este es el array actual:', drinks)
+
+
+        // ARRAY LENGTH
+        console.log(`Hay un total de ${drinks.length} bebidas`)
+
+
+        // ARRAY EXTENSION (IMPERATIVE)
+        drinks[drinks.length] = 'Choco Bailyes'
+        console.log('Este es el array actual:', drinks)
+
+
+        // ARRAY EXTENSION (DECLARATIVE)
+        drinks.push('Jagger')
+        console.log('Este es el array actual:', drinks)
+
+
+        // OTHER ARRAY OPERATIONS
+        drinks.unshift('Mahou')         // Prepend element
+        drinks.pop()                    // Remove last element
+
+        console.log('Este es el array actual:', drinks)
+
+        drinks.splice(2, 3)             // Remove 3 items from index 2
+
+        const text = 'Popino es un gran perro'
+        const splittedText = text.split(' ')
+
+        console.log('Las palabras de la frase son:', splittedText)
+
+
+
+    </script>
+</body>
+
+</html>
