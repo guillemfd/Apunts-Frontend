@@ -1,182 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 
     <script>
 
 
-        // const age = prompt("Welcome to Ironhack cinema. How old are you?")
+        //while
 
-        // if (age <= 16) {
-        //     console.log("You have a teenager discount.")
+        // let i = 0
+        // while (i <= 100) {
+        //     console.log(i)
+        //     i++
         // }
 
-        // if (age > 16 && age <= 65) {
-        //     console.log("Sorry, you don't have any discount :(")
+
+
+
+
+
+
+        // while
+
+        // let value = 0
+
+        // while (value < 10) {
+        //     value = prompt('Introduce un valor mayor de 10...!')
         // }
 
-        // if (age > 65) {
-        //     console.log("You have a senior citizen discount :)")
+        // console.log('Ya era hora, merluzo')
+
+
+
+
+        
+        //for
+        // for (let i = 0; i < 10; i++){
+        //     console.log(i)
         // }
 
-        // console.log("That's all. Bye.")
 
 
+        const sentence = 'Popino'
+        console.log(`El texto tiene una longitud de ${sentence.length} caracteres`)
+        console.log(`El segundo caracter es ${sentence.charAt(1)}`)
 
 
-        // // Equivalent: 
-        // const age = prompt("Welcome to Ironhack cinema. How old are you?")
-
-        // if (age <= 16) {
-        //     console.log("You have a teenager discount.")
-        // } else if (age >= 65) {
-        //     console.log("You have a senior citizen discount :)")
-        // } else {
-        //     console.log("Sorry, you don't have any discount :(")
+        // for (let i = 0; i < sentence.length; i++) {
+        //     console.log(`El caracter es ${sentence.charAt(i)}`)
         // }
 
-        // console.log("That's all. Bye.")
+        // console.log('Y AHORA AL REVÉS')
+
+        // for (let i = sentence.length - 1; i >= 0; i--) {
+        //     console.log(`El caracter es ${sentence.charAt(i)}`)
+        // }
 
 
 
 
 
-        // //Nesting
 
-        // const userCard = confirm("¿Tienes tarjeta de socio")
 
-        // if (userCard === true) {
 
-        //     const userAge = prompt("¿Cuál es tu edad?")
 
-        //     if (userAge <= 15) {
-        //         console.log("Tienes un descuento joven del 15% yay")
-        //     } else if (userAge <= 55) {
-        //         console.log("Sin descuento, merluzo")
-        //     } else {
-        //         console.log("Tienes un descuento Senior de 45%")
+        // for (let i = 0; i <= 100; i++) {
+
+        //     if (i % 5 === 0) {
+        //         console.log('MULTIPLO! LO SALTAMOS')
+        //         continue
         //     }
 
-        // } else {
-        //     console.log("Hazte socio para tener decsuentos, agarrado")
+        //     if (i === 70) {
+        //         break
+        //     }
+
+        //     console.log('Estamos en la iteración', i)
         // }
 
-        // console.log("Gracias por participar")
+        // console.log('Bucle abandonado')
 
 
 
-
-
-        //   // IF STATEMENT (see below for Switch equivalent)
-        // const name = prompt("Favorite Game of Thrones main character:")
-
-        // let house = ""
-
-        // if (name === "Khal Drogo") {
-        //     house = "Dothraki Horselord";
-        // } else if (name === "Daenerys") {
-        //     house = "Targaryen";
-        // } else if (name === "Jon Snow" || name === "Sansa" || name === "Arya") {
-        //     house = "Stark";
-        // } else if (name === "Cersei" || name === "Tyrion" || name === "Ser Jaime") {
-        //     house = "Lannister";
-        // } else {
-        //     house = "Other";
-        // }
-
-        // console.log(`Your favorite character (${name}) is from the house ${house}.`)
-
-
-
-
-        // // Switch (I)
-
-        // const name = prompt("Favorite Game of Thrones main character:");
-        // let house = "";
-
-        // switch (name) {
-        //     case "Khal Drogo":
-        //         house = "Dothraki Horselord";
-        //         break;
-        //     case "Daenerys":
-        //         house = "Targaryen";
-        //         break;
-        //     case "Jon Snow":
-        //     case "Sansa":
-        //     case "Arya":
-        //         house = "Stark";
-        //         break;
-        // }
-
-        // console.log(`Your favorite character (${name}) is from the house ${house}.`)
-
-
-
-
-
-        // // Switch (II)
-
-        // const method = prompt('Indica un método del objeto string para obtener su descripción')
-
-        // const lowecasedMethod = method.toLowerCase()
-
-        // switch (lowecasedMethod) {
-        //     case "repeat":
-        //         console.log("El método repite un string")
-        //         break
-        //     case "substring":
-        //     case "slice":
-        //     case "substr":
-        //         console.log("El método retorna una sección del string")
-        //         break
-        //     case "replaceall":
-        //         console.log("El método reemplaza")
-        //         break
-        //     default:
-        //         console.log(`Método "${method}" no registrado en el sistema...`)
-        // }
-
-        // console.log("Gracias por participar")
-
-
-
-
-        // // Switch (III)
-
-        // const VAT = prompt('Indica el IVA aplicable')
-        // const subtotal = prompt('Indica el subtotal aplicable')
-
-        // let tax
-
-        // switch (VAT.toLowerCase()) {
-
-        //     case "general":
-        //     case "gral":
-        //         tax = 1.21
-        //         break
-
-        //     case "reducido":
-        //         tax = 1.1
-        //         break
-
-        //     case "exento":
-        //         tax = 1
-        //         break
-
-        //     default:
-        //         tax = 1
-        // }
-
-        // console.log(`El total asciende a ${subtotal * tax} euretes`)
 
 
     </script>
 </body>
+
 </html>
