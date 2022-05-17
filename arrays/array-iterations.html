@@ -13,36 +13,37 @@
 
     <script>
 
-        const drinks = ['Coca-cola', 'Agua', 'Monster', 'Kas', 'Cacaolat', 'Mahou', 'Choco Bailyes']
+        const drinks = ['Coca-cola', 'Agua', 'Monster', 'Kas', 'Cacaolat', 'Mahou', 'Choco Bailyes', 'Vino']
 
 
-        // // Array iteration - for
-        // for (let i = 0; i < drinks.length; i++) {
-        //     console.log(drinks[i])
-        // }
+        // // Array iteration - for  IMPERATIVA
+        for (let i = 0; i < drinks.length; i++) {
+            console.log(drinks[i])
+        }
 
 
-
+        // DECLARATIVA
+            drinks.forEach(function (item) {
+                console.log(item)
+            })
 
 
 
         // // Array iteration - forEach with nominal function
-        // drinks.forEach(showDrinkOnConsole)
+        drinks.forEach(showDrinkOnConsole)
 
-        // function showDrinkOnConsole(eachDrink) {
-        //     console.log('El valor del array es', eachDrink)
-        // }
+        function showDrinkOnConsole(eachDrink) {
+            console.log('NOMINAL', eachDrink)
+        }
 
 
 
 
 
         // // Array iteration - forEach with anonymous function
-        // drinks.forEach(function (eachDrink) {
-        //     console.log('El valor del array es', eachDrink)
-        // })
-
-
+        drinks.forEach(function (eachDrink) {
+            console.log('ANÓNIMO', eachDrink)
+        })
 
 
 
