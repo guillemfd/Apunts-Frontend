@@ -23,6 +23,24 @@
 
         console.log('El perro 2 se llama', doggy)
 
+
+
+
+        // VARIABLE SCOPE
+
+        let globalVar = 'Soy una variable global y estoy disponible en cualquier punto del script'
+
+        function whatever() {
+            let localVar = 'Soy una variable local y estoy disponible sólo en la función'
+
+            console.log('La global desde la función:', globalVar)
+            console.log('La local desde la función:', localVar)
+        }
+
+        whatever()
+
+        console.log('La global desde la función:', globalVar)
+        console.log('La local desde la función:', localVar)
         
     </script>
 
