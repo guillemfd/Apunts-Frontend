@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        // Data types: strings
+        const name = 'Yerai'
+        const lastName = 'Álvarez'
+
+        // Interpolation
+        const sentence = `El alumno ${name} ${lastName} se encuentra en su casa`
+
+        // String length
+        console.log('La frase', sentence, 'tiene un total de', sentence.length, 'caracteres')
+
+        // charAt()
+        console.log('En la posición 4 se encunetra el caracter', sentence.charAt(3))
+        console.log('En la posición 11 se encunetra el caracter', sentence.charAt(10))
+        console.log('En la posición 1 se encunetra el caracter', sentence.charAt(0))
+
+        // includes()
+        console.log('¿Incluye la frase el string "casa"?', sentence.includes('casa'))
+        console.log('¿Incluye la frase el string "popino"?', sentence.includes('popino'))
+
+        // indexOf()
+        console.log('¿En qué índice se encuentra "casa"?', sentence.indexOf('casa'))
+        console.log('¿En qué índice se encuentra "popino"?', sentence.indexOf('popino'))
+
+        // substring()
+        console.log('El texto entre los índices 10 y 25 es:', sentence.substring(10, 25))
+        console.log('El texto a partir del índice 30 es:', sentence.substring(30))
+
+        // substr()
+        console.log('Los 10 caracteres que hay a partir del índice 20 son:', sentence.substr(20, 10))
+
+        // slice()
+        console.log('Los caracteres antepenúltimo y penúltimo son:', sentence.slice(-3, -1))
+
+
+
+        // localeCompare() -> investiga! :D
+
+
+    </script>
+</body>
+
+</html>
