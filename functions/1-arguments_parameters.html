@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Function declaration
+        function sayHi() {
+            console.log('Hello world')
+        }
+
+        // Function invocation
+        sayHi()
+        sayHi()
+
+
+        // Function parameters
+        function sayHi(name, lastName) {
+            console.log(`¡Hola, ${name} ${lastName}!`)
+        }
+
+        // Function arguments
+        sayHi('Guillem', 'Ferrer')
+        sayHi('Bernat', 'Rossell')
+ 
+
+
+//-----------------------------------------------------------------------------------
+
+
+
+        // Example 
+        function showBookingDetails(fullName, date, cost, category = 'ESTÁNDAR') {
+            //sería lo mismo que poner:
+            // if (category === undefined)
+            //     category = 'ESTÁNDARD'
+
+            const details = `Reserva confirmada para ${fullName}: habitación ${category} para el día ${date} (${cost}€ total)`
+            console.log(details)
+        }
+
+        showBookingDetails('Guillem Ferrer', '10/10/21', 627)
+        showBookingDetails('Riu Rossell', '10/10/21', 1200, 'VISTAMAR')
+
+
+//-----------------------------------------------------------------------------------
+
+
+        // Example #2 para poder manejar como saco la información  ====> RETURN <====
+                function composeBookingDetails(fullName, date, cost, category = 'ESTÁNDAR') {
+
+            const details = `Reserva confirmada para ${fullName}: habitación ${category} para el día ${date} (${cost}€ total)`
+            return details
+        }
+
+        const booking1 = composeBookingDetails('Guillem Ferrer', '10/10/21', 627)
+        const booking2 = composeBookingDetails('Riu Rossell', '10/10/21', 1200, 'VISTAMAR')
+
+        //saco la info por consola:
+        console.log(booking1)
+
+        //saco la info por pantalla:
+        document.write(booking2)
+
+
+
+//-----------------------------------------------------------------------------------
+            // Example 3 
+            function calculateTotalPrice(subtotal, taxPercent) {
+
+            if (typeof subtotal != 'number' || typeof taxPercent != 'number') {
+                return 'VALORES NO VÁLIDOS'
+            }
+
+            const theTaxPart = subtotal * taxPercent / 100
+            const finalResut = subtotal + theTaxPart
+            return finalResut
+
+            console.log('Estoy debajo del return y no llegaré a mostrarme nunca')
+            }
+
+            const price = calculateTotalPrice(50, 7)
+            console.log(`El resultado que será enviado a la BBDD es ${price}€`)
+
+
+
+//-----------------------------------------------------------------------------------
+
+
+
+
+    </script>
+</body>
+
+</html>
